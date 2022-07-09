@@ -1,0 +1,74 @@
+body{
+    margin: 0;
+    padding:0;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(ipad.jpg); 
+    font-family: sans-serif;
+}
+.container{
+    width: 1280px;
+    margin: 70px auto 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.box
+{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    
+    margin: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+.imgbox
+{
+    position: relative;
+    overflow: hidden;
+    
+
+}
+.imgbox img
+{
+    max-width: 100%;
+    max-height: 200%;
+    transition: transform 2s;
+}
+.imgbox img:hover
+{
+    transform: scale(1.2);
+    
+}
+.details{
+    position: absolute;
+    top:10px;
+    left: 10px;
+    bottom:10px;
+    right: 10px;
+    background: rgba(0,0,0,.8);
+    
+}
+.content{
+    position: absolute;
+    top: 10%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+    }
+h2{
+    margin: 10px 0 0;
+    padding-top: 130px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 20px;
+    color:#ff0;
+}
+p{
+    margin: 10px 0 0;
+    padding: 0;
+   
+}
+.details:hover{
+    transform: scaleY(1);
+}
